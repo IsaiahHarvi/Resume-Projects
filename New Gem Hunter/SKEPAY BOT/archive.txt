@@ -1,0 +1,55 @@
+PATCHNOTES ARCHIVE
+
+APRIL 2021
+4/10/2021 14:32 - Skepay 3.4, comeback baby.
+
+JANUARY 2021
+1/29/2021 2:56 PM - Skepay 3.4, lots of things. Like spotify.
+1/6/2021 9:36 PM - Skepay 3.3 tweaked uptime.
+1/6/2021 1:27 PM - Skepay 3.3 changed lie counter, lie leaderboard, uptime, and gfuel.
+
+OCTOBER 2020
+10/29/2020 7:43 PM - Skepay 3.3 added gfuel.
+10/22/2020 4:19 PM - Skepay 3.3 added twitter function.
+10/20/2020 7:00 PM - Skepay 3.2 finalized activity.
+10/7/2020 5:32 PM - Finished some filtering stuff.
+10/5/2020 9:00 PM - Skepay 3.2 added a ban, kick, and purge.
+10/1/2020 1:56 PM - Skepay 3.2 fixed a second bug with log.
+10/1/2020 1:52 PM - Skepay 3.2 fixed bug with log.
+10/1/2020 12:14 PM - Skepay 3.2 moved to independant git repo and changed token verification.
+
+SEPTEMBER 2020
+9/30/2020 9:46 PM - Skepay 3.2 changed toggle, messed with r.
+9/26/20/20 3:27 PM - Skepay 3.2, added >youtube, will return 3 random videos.  can pass through a search word
+9/25/2020 - Skepay 3.1 Tons of tweaks.
+9/20/2020 1:12 AM - Skepay_3.1 Added a development toggle and nsfw toggle, tweaked archive, added functionality to download log. 
+9/20/2020 11:50 AM - Skepay3_1.1 Added Drink Picker and Fortune, made tweaks.
+9/16/2020 4:56 PM - Skepay has been completely reworked and is structured correctly. This is Skepay 3.
+9/15/2020 11:00 PM - Skepay can run python code. "Skepay py [code]" <- BETA
+9/5/2020 - Released Skepay 2.5.  New responses.  Removed old functions.
+
+AUGUST 2020
+8/24/2020 1:46 PM - Skepay 2.3.7.2 done a lot of random BTS stuff.
+8/5/2020 1:45 PM - Skepay 2.3.7.1 Reddit change, "Skepay r/[subreddit]" and depending on function, will send error messages
+
+JULY 2020
+7/25/2020 2:50 AM - Skepay 2.3.7.1 New feature for Dev.
+7/20/2020 5:29 PM - Skepay 2.3.7.1 Added tons of DEV features.
+7/20/2020 4:24 PM - Skepay 2.3.7.1 Added mph and km/h conversions.
+7/20/2020 4:13 PM - Skepay 2.3.7.1 Added conversions.
+7/19/2020 2:20 PM - Skepay 2.3.7 Added BETA reddit feature.
+7/19/2020 12:32 AM - Skepay 2.3.6.3 Cleaned up.\n
+7/18/2020 2:37 AM - Skepay 2.3.6.3 "skepay id [@user]" will return the users client id.                      
+7/7/2020 1:36 PM - Skepay 2.3.6.3 "[name] lies" will return how many times that person has lied, without incrementing the counter.
+7/2/2020 4:50 PM - Skepay 2.3.6.2 Finally fixed the stupid authentication error.
+7/1/2020 4:16 AM - Skepay 2.3.6.2 HOPEFULLY fixed the stupid authentication error.
+
+JUNE 2020
+6/30/2020 4:47 PM - Skepay 2.3.6.2 updated note feature.  Added a Patch notes Archive.
+6/30/2020 2:10 AM - Skepay 2.3.6.1 tweaked note feature.  Organized Code.
+6/28/2020 1:58 PM - Skepay 2.3.6.1 updated note feature, now can read specific amount and only AUTHUSERS can use function.\nAlso set authentication to use Client Ids instead of usernames.
+6/25/2020 5:39 AM - Skepay 2.3.6 now stores notes and reads notes.
+6/18/2020 8:21 PM - Skepay_2.3.5.2 dad messages have a lower chance of sending. Tweaked help message.
+6/11/2020 5:57 PM - Skepay_2.3.5.2 changed error messages to print to console instead of messaging servers.
+6/11/2020 5:45 PM - Skepay_2.3.5.2 joined fatherhood.  Patch notes were tweaked.
+6/11/2020 - Skepay_2.3.5.1 can send emails and has a contact list.

@@ -1,0 +1,8 @@
+config.py/
+__pycache__/
+.vs/
+config.py/
+log.txt/
+lies.csv/
+.vscode/
+/

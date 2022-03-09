@@ -1,0 +1,2 @@
+C:\Users\harvi\Desktop\C++\Estimate Pi 2 Integers\Estimate Pi 2 Integers\Debug\Estimate Pi 2 Integers.exe
+C:\Users\harvi\Desktop\C++\Estimate Pi 2 Integers\Estimate Pi 2 Integers\Debug\Estimate Pi 2 Integers.pdb
