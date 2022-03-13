@@ -9,22 +9,28 @@ float pi(int loops);
 
 int main(){
 	srand(time(NULL));
-	cout << pi(100000000) << endl;
+	cout << pi(10000000) << endl; // 10,000,000
 }
 
 
 float pi(int loops) {
-	float circleNums = 0;
-	float total = 0;
+	float circleNums = 0; // Number of points that are in the circle
+	float total = 0;      // Total number of points
+	float x;
+	float y;
+	float x_sqr;  // Square of X
+	float y_sqr;  // Square of Y
+	float sum;    // Sum of squared x and y
+
 
 	for (int i = 0; i < loops; i++) {
-		float num1 = float((double)rand() / (double)(RAND_MAX / 1.0)); // 2 random floating point numbers between 0 and 1
-		float num2 = float((double)rand() / (double)(RAND_MAX / 1.0));
+		x = float((double)rand() / (double)(RAND_MAX / 1.0)); // 2 random floating point numbers between 0 and 1
+		y = float((double)rand() / (double)(RAND_MAX / 1.0));
 
-		float num1S = pow(x, 2.0); // squares each floating point num
-		float num2S = pow(y, 2.0);
+		x_sqr = pow(x, 2.0); // x^2
+		y_sqr = pow(y, 2.0); // x^2
 
-		float sum = num1S + num2S; 
+		sum = x_sqr + y_sqr;
 
 		if (sum <= 1) {
 			circleNums++;
@@ -32,7 +38,7 @@ float pi(int loops) {
 		total++;
 	}
 
-	float total = 4 * circleNums / total;
+	total = 4 * circleNums / total;
 
 	return total;
 }
