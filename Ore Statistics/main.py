@@ -1,4 +1,4 @@
-import anvil, math
+import anvil, os
 from matplotlib import pyplot as plt
 
 # Isaiah Harville 
@@ -17,37 +17,45 @@ blockObjects = {
                 anvil.Block('minecraft', 'coal_ore').id : 0
                 }
 
+
+def calculate(region_file):
+    # Data Generation
+    for i in range(32): # X range of a region
+        for j in range(32): # Y range of a region
+            try:
+                chunk = anvil.Chunk.from_region(region_file, i, j) # Getting chunks of region (0,0)
+
+                for y in range(70): # Y range for a chunk w/ caves
+                    for x in range(16): # X range for a chunk
+                        for z in range(16): # Z range for a chunk
+                            block = chunk.get_block(x,y,z)
+                            
+                            if block.id in blockObjects:
+                                blockObjects[block.id] += 1
+                                
+                                chunk_x = i * 16 + x
+                                chunk_z = j * 16 + z
+                                
+                                #print('%s located at (%g, %g, %g)'%(block.id, chunk_x, y, chunk_z))
+
+            except anvil.errors.ChunkNotFound: 
+                pass # Not all of a region's chunks are saved to the file. They are loaded as they are discovered.
+                    # If a chunk hasn't been discovered then it doesn't exist in the save file.
+
+
+
 # Set the region from the folder
-region = anvil.Region.from_file('region/r.0.0.mca')
-
-
-# Data Generation
-for i in range(32): # X range of a region
-    for j in range(32): # Y range of a region
-        try:
-            chunk = anvil.Chunk.from_region(region, i, j) # Getting chunks of region (0,0)
-
-            for y in range(70): # Y range for a chunk w/ caves
-                for x in range(16): # X range for a chunk
-                    for z in range(16): # Z range for a chunk
-                        block = chunk.get_block(x,y,z)
-                        
-                        if block.id in blockObjects:
-                            blockObjects[block.id] += 1
-                            
-                            chunk_x = i * 16 + x
-                            chunk_z = j * 16 + z
-                            
-                            #print('%s located at (%g, %g, %g)'%(block.id, chunk_x, y, chunk_z))
-
-        except anvil.errors.ChunkNotFound: 
-            pass # Not all of a region's chunks are saved to the file. They are loaded as they are discovered.
-                 # If a chunk hasn't been discovered then it doesn't exist in the save file.
+searchedRegions = 0
+for rca_file in os.listdir("%s/region"%(os.path.dirname(__file__))): # Path to the region folder which contains Minecraft's RCA files.
+    region = anvil.Region.from_file("%s/region/%s"%(os.path.dirname(__file__), rca_file))
+    searchedRegions += 1
+    calculate(region)
 
 
 # Math Plotting
 plt.axis("equal")
 plt.pie([int(blockObjects[i]*100) for i in blockObjects], labels=['Diamond', 'Gold', 'Iron', 'Coal'], autopct='%1.1f%%')
 plt.legend(loc='lower right')
-plt.title('Percentage of Ore found in a Region')
+plt.title('Percentage of the Ore found in %g Regions.'%searchedRegions)
+plt.savefig('figure.png')
 plt.show()
