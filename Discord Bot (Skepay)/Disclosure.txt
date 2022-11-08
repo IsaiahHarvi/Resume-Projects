@@ -1,4 +1,0 @@
-This bot has a lot of other dependant files and will not properly function without it.
-It is missing a vital config file.  As well as a few .txt and .csv files.
-
-This is for privacy reasons.
