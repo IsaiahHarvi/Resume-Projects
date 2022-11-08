@@ -22,7 +22,7 @@ int main()
 }
 
 
-void swap(char *item1, char *item2) // pointer help from joshua here
+void swap(char *item1, char *item2)
 {
     char *tempIem1 = item1;
     item1 = item2;
