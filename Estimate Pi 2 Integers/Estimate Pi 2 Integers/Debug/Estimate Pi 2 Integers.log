@@ -1,5 +1,0 @@
-﻿  Estimate Pi 2 Integers.cpp
-C:\Users\harvi\Desktop\Coding\Resume-Projects\Estimate Pi 2 Integers\Estimate Pi 2 Integers\Estimate Pi 2 Integers.cpp(11,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\harvi\Desktop\Coding\Resume-Projects\Estimate Pi 2 Integers\Estimate Pi 2 Integers\Estimate Pi 2 Integers.cpp(30,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\harvi\Desktop\Coding\Resume-Projects\Estimate Pi 2 Integers\Estimate Pi 2 Integers\Estimate Pi 2 Integers.cpp(31,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  Estimate Pi 2 Integers.vcxproj -> C:\Users\harvi\Desktop\Coding\Resume-Projects\Estimate Pi 2 Integers\Debug\Estimate Pi 2 Integers.exe
